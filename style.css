@@ -153,6 +153,7 @@ button {
   background-color: var(--accent-color);
   color: white;
   padding: 0.75rem 1.5rem;
+  font-family: 'Open Sans', sans-serif;
   border: none;
   border-radius: 5px;
   font-weight: 600;
@@ -658,6 +659,11 @@ button:hover {
   padding: 2rem;
 }
 
+.contact-info .info-item {
+  font-size: 1.2rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
 .contact-page {
   display: flex;
   flex-wrap: wrap;
@@ -668,8 +674,20 @@ button:hover {
 .contact-form h2,
 .contact-info h2 {
   margin-bottom: 1.5rem;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   color: var(--primary-color);
+}
+
+.contact-form input, .contact-form textarea {
+  font-size: 1.1rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.2rem;
+  border-radius: 1.5rem;
 }
 
 form {
@@ -701,7 +719,7 @@ textarea {
 }
 
 .map {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 .map iframe {

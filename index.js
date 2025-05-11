@@ -6,12 +6,6 @@ const navLinks = document.querySelectorAll('.nav-links a').forEach(link => {
 })
     ;
 
-document.addEventListener('DOMContentLoaded', function () {
-    document.getElementById('hamburger').addEventListener('click', function() {
-        document.getElementById('navbar').classList.toggle('active');
-    });
-});
-
 function toggleAccordion(header) {
     const item = header.parentElement;
     item.classList.toggle("open");
@@ -27,4 +21,10 @@ document.querySelectorAll('.nav-links a').forEach(link => {
   link.addEventListener('click', () => {
     document.getElementById("navbar").classList.remove("active");
   });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('hamburger').addEventListener('click', function() {
+        document.getElementById('navbar').classList.toggle('active');
+    });
 });

@@ -235,6 +235,29 @@ button:hover {
   transition: all 0.3s ease;
 }
 
+/* Hero Section - Mobile */
+@media (max-width: 768px) {
+  .hero-content {
+    padding-top: 7.2rem;
+  }
+
+  .hero h1 {
+    font-size: 3.5rem;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .hero p {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  
+  .hero button {
+    font-size: 1.2rem;
+    padding: 0.75rem 2rem;
+  }
+}
+
 /* About Section */
 /* Parallax City */
 .parallax {
@@ -272,36 +295,20 @@ button:hover {
   text-align: center;;
 }
 
-/* .city-text {
-  position: absolute;
-  bottom: 100px;
-  z-index: 2;
-  font-size: 3rem;
-  font-weight: bold;
-  letter-spacing: 5px;
-  display: flex;
-  gap: 5px;
+@media (max-width: 768px) {
+  .parallax {
+    height: 75vh;
+  }
+
+  .parallax img {
+    height: 75vh;
+  }
+
+  .parallax h2 {
+    font-size: 3.5rem;
+    top: 32.5%;
+  }
 }
-
-.city-text span:nth-child(-n+5) {
-  color: white;
-}
-
-.city-text span:nth-child(n+6) {
-  color: transparent;
-  text-shadow: 0 0 5px rgba(255,255,255,0.3);
-} */
-
-/* .parallax-desc {
-  position: absolute;
-  top: 20%;
-  text-align: center;
-  max-width: 800px;
-  margin: auto;
-  padding: 0 1rem;
-  font-size: 1.1rem;
-  color: #ccc;
-} */
 
 /* About Content */
 .about {
@@ -333,6 +340,21 @@ button:hover {
   letter-spacing: 2px;
   line-height: 180%;
   color: var(--text-color);
+}
+
+@media (max-width: 768px) {
+  .about .section-title {
+    font-size: 2.4rem;
+  }
+
+  .about-content {
+    padding: 0 1rem;
+  }
+
+  .about-content p {
+    font-size: 1.2rem;
+    line-height: 150%;
+  }
 }
 
 /* Products Grid (Home) */
@@ -371,6 +393,17 @@ button:hover {
   line-height: 100%;
   margin-bottom: 2rem;
   color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2.4rem;
+  }
+
+  .products-header button {
+    font-size: 1.2rem;
+    padding: 0.75rem 2rem;
+  }
 }
 
 .product-grid {
@@ -490,6 +523,28 @@ button:hover {
 .accordion .open .accordion-body {
   max-height: 200px;
   padding: 1rem 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .features .section-title {
+    margin-bottom: 2.5rem;
+  }
+
+  .accordion {
+    padding: 0 1rem;
+  }
+
+  .accordion-item {
+    margin-bottom: 1rem;
+  }
+
+  .accordion-header {
+    font-size: 1.2rem;
+  }
+
+  .accordion-body {
+    font-size: 1rem;
+  }
 }
 
 /* Testimonials Carousel */
@@ -789,6 +844,47 @@ footer .bottom {
 
 /* Responsive Fixes */
 @media (max-width: 768px) {
+  footer .top {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .left,
+  footer .center {
+    width: 100%;
+    text-align: center;
+  }
+  footer .left .nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  footer .left .nav-links li {
+    margin-bottom: 0.5rem;
+  }
+  footer .left .nav-links li a {
+    font-size: 1.2rem;
+  }
+  footer .center {
+    margin-bottom: 1rem;
+  }
+  footer .center {
+    flex-direction: column;
+    justify-content: center;
+  }
+  footer .right .social-links {
+    gap: 0.5rem;
+  }
+
+  footer .right 
+
+  footer .bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .contact-page .container,
   .products-page .container {
     flex-direction: column;
@@ -797,10 +893,6 @@ footer .bottom {
   .sidebar {
     margin-right: 0;
     margin-bottom: 2rem;
-  }
-  
-  .hero h1 {
-    font-size: 1.8rem;
   }
   
   .city-text {

@@ -379,7 +379,7 @@ button:hover {
   gap: 1rem;
 }
 
-.product-card {
+.product-card, .product-info {
   background: white;
   border-radius: 8px;
   overflow: hidden;
@@ -387,12 +387,12 @@ button:hover {
   font-family: 'Open Sans', sans-serif;
 }
 
-.product-card:hover {
+.product-card:hover, .product-info:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 25px rgba(0,0,0,0.1);
 }
 
-.product-card img {
+.product-card img, .product-info img {
   width: 100%;
   object-fit: cover;
 }
@@ -401,16 +401,16 @@ button:hover {
   padding: 1rem;
 }
 
-.product-card h3 {
+.product-card h3, .product-info h3 {
   font-size: 1.5rem;
   line-height: 100%;
 }
 
-.product-card p {
+.product-card p, .product-info p {
   margin-bottom: 0.5rem;
 }
 
-.product-card .price {
+.product-card .price, .product-info .price {
   font-size: 1.2rem;
   color: var(--accent-color);
   font-weight: 800;

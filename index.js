@@ -6,8 +6,10 @@ const navLinks = document.querySelectorAll('.nav-links a').forEach(link => {
 })
     ;
 
-document.getElementById('hamburger').addEventListener('click', function() {
-    document.getElementById('navbar').classList.toggle('active');
+document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('hamburger').addEventListener('click', function() {
+        document.getElementById('navbar').classList.toggle('active');
+    });
 });
 
 function toggleAccordion(header) {

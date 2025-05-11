@@ -658,6 +658,22 @@ button:hover {
   background-color: var(--accent-color);
 }
 
+@media (max-width: 768px) {
+  .sidebar {
+    padding: 0 1rem;
+    margin-right: 0;
+    margin-bottom: 2rem;
+    background-color: hsl(0, 0%, 100%, 0.6);
+    z-index: 10;
+  }
+
+  .filter-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+}
 
 /* Product Grid for Products Page */
 .products-page {
@@ -783,6 +799,31 @@ textarea {
   border-radius: 8px;
 }
 
+@media (max-width: 768px) {
+  .contact-page {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form,
+  .contact-info {
+    flex: 1 1 100%;
+    margin-bottom: 2rem;
+  }
+
+  .contact-info .info-item {
+    font-size: 0.95rem;
+  }
+
+  .contact-form h2,
+  .contact-info h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+
+
 /* Footer */
 footer {
   background-color: hsl(238, 52%, 38%);
@@ -888,14 +929,5 @@ footer .bottom {
   .contact-page .container,
   .products-page .container {
     flex-direction: column;
-  }
-  
-  .sidebar {
-    margin-right: 0;
-    margin-bottom: 2rem;
-  }
-  
-  .city-text {
-    font-size: 2rem;
   }
 }

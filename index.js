@@ -16,6 +16,13 @@ function toggleAccordion(header) {
 };
 
 function toggleMenu() {
-    const nav = document.getElementById('navbar');
-    nav.classList.toggle('active');
-};
+  const navbar = document.getElementById("navbar");
+  navbar.classList.toggle("active");
+}
+
+// Close mobile menu when clicking a link
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    document.getElementById("navbar").classList.remove("active");
+  });
+});

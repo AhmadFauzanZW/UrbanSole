@@ -126,12 +126,11 @@ header {
 }
 
 .header-products {
-  background-image: url(./Assets/All\ Products\ -\ Header.jpg);
-  
+  background-image: url(Assets/All\ Products\ -\ Header.jpg);
 }
 
 .header-contact {
-  background-image: url(./Assets/Contact\ Us\ -\ Header.jpg);
+  background-image: url(Assets/Contact\ Us\ -\ Header.jpg);
 }
 
 .header-content {
@@ -241,7 +240,7 @@ button:hover {
 .parallax {
   position: relative;
   height: 100vh;
-  background: url('./Assets/Urban.jpg') no-repeat center center/cover;
+  background: url('Assets/Urban.jpg') no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
